@@ -4,10 +4,13 @@
 
 username: Anibal
 layout: home
+title: Welcome to the Product Ownership Central!
+quote: There is no difference between a garbage solution, which nobody wants and a sophisticated one, which nobody understands.
 ---
 
 # I am a title
 And this just bollocks text with a table below
+
 
 | col1 | col2 |
 | ---- | ---- |

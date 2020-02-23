@@ -1,20 +1,66 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- add a meta tag with words coming from the config -->
+    <!-- add a meta tag with words coming from the page itself -->
+    <link rel="shortcut icon" href="{{ "/assets/images/favicon.ico" | relative_url }}" type="image/x-icon">
+    <link rel="icon" href="{{ "/assets/images/favicon.ico" | relative_url }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 
-  {%- include head.html -%}
-
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lacquer|Shadows+Into+Light&display=swap" rel="stylesheet">
+  </head>
   <body>
-
-    {%- include header.html -%}
-
+    <!-- =================================================== HEADER =================================================== -->
+    <header class="main-header" role="banner">
+      <nav class="site-nav">
+        <div class="nav-left">
+          <a href="{{ "/" | relative_url }}">
+            <img src="{{site.baseurl}}/assets/images/logo.png">Product Ownership Central
+          </a>
+        </div>
+        <div class="nav-right">
+          <a href="/">Home</a>
+          <a href="{{ "about" | relative_url }}">Author</a>
+          <a href="{{ "feed.xml" | relative_url }}"><img src="{{site.baseurl}}/assets/images/rss.png" /></a>
+        </div>
+      </nav>
+    </header>
     <main class="page-content" aria-label="Content">
-      <div class="wrapper">
+      <div class="main-content">
         {{ content }}
       </div>
     </main>
-
-    {%- include footer.html -%}
-
+    <!-- =================================================== FOOTER =================================================== -->
+    <footer class="site-footer h-card">
+      <data class="u-url" href="{{ "/" | relative_url }}"></data>
+      <div class="wrapper">
+        <h2 class="footer-heading">{{ site.title | escape }}</h2>
+        <div class="footer-col-wrapper">
+          <div class="footer-col footer-col-1">
+            <ul class="contact-list">
+              <li class="p-name">
+                {%- if site.author -%}
+                  {{ site.author | escape }}
+                {%- else -%}
+                  {{ site.title | escape }}
+                {%- endif -%}
+                </li>
+                {%- if site.email -%}
+                <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+                {%- endif -%}
+            </ul>
+          </div>
+          <div class="footer-col footer-col-2">
+            {%- include social.html -%}
+          </div>
+          <div class="footer-col footer-col-3">
+            <p>{{- site.description | escape -}}</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
-
 </html>

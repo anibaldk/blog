@@ -1,0 +1,134 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+// ============================================ HEADER ============================================
+.main-header {
+  background-color: $blue-color-navy;
+  // Positioning context for the mobile navigation icon
+  position: relative;
+
+  .site-nav {
+    color: $white-color;
+    line-height: $base-line-height * 2;
+    width: 100%;
+
+    .nav-left{
+      display: inline-block;
+      margin-left: 2%;
+
+      a {
+        color: inherit;
+      }
+
+      img {
+        width: 5%;
+        height: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 10px;
+      }
+    }
+
+    .nav-right {
+      float: right;
+      text-align: right;
+      margin-right: 2%;
+
+      a {
+        color: inherit;
+
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+      }
+
+      img {
+        width: 4%;
+        height: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+
+
+    }
+  }
+}
+
+
+
+// ============================================ CONTENT ============================================
+//overriding stuff from minima
+.main-content {
+  //border: 1px solid #ff0000;
+  max-width: 80%;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.home {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  div {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    width: 80%;
+  }
+
+  img {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+  }
+
+  cite {
+    text-align: center;
+    display: block;
+    color: $grey-color-dark;
+    margin-left: inherit;
+    margin-right: inherit;
+    margin-top: 15px;
+  }
+
+}
+.post-list {
+
+  li {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: $spacing-unit * 0.7;
+    padding-bottom: $spacing-unit * 0.7;
+
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      border-bottom: 1px solid $grey-color-light;
+    }
+
+  }
+
+}
+.post-link {
+  margin-bottom: 0px;
+
+}
+
+
+// ============================================ POST ============================================
+.post {
+  //border: 1px solid #ff0000;
+  max-width: 80%;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
