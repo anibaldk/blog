@@ -3,23 +3,30 @@ layout: default
 ---
 <div class="home">
   <div>
-    <img src="{{site.baseurl}}/assets/images/solutions.png"/>
+    <img src="{{site.baseurl}}/assets/images/home.png" style="width: 50%;" alt="solutions banner"/>
     <cite>"{{page.quote}}"</cite>  <!-- TODO: change the color of the quote -->
   </div>
+  <br/>
   <div>
     {%- if site.posts.size > 0 -%}
       <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2> -->
-      <ul class="post-list">
+      <table class="post-list-table">
         {%- for post in site.posts -%}
-        <li>
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-          {{ post.summary}}
-          <!-- {{ post.excerpt }} -->
-        </li>
+        {%- if post.thumbnail -%}
+          <tr class="post-list-row">
+            {%- assign date_format = "%b %-d, %Y" -%}
+            <td class="date-cell">{{ post.date | date: date_format }}</td>
+            <td class="title-cell">
+              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+              {{ post.summary}}
+            </td>
+            <td class="thumbnail-cell">
+              <img src="{{site.baseurl}}/assets/images/{{post.thumbnail}}" class="post-thumbnail" alt="post thumbnail" />
+            </td>
+          </tr>
+        {%- endif -%}
         {%- endfor -%}
-      </ul>
+      </table>
       <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
     {%- endif -%}
   </div>

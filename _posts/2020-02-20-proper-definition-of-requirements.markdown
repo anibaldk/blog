@@ -3,6 +3,7 @@ layout: post
 title:  Proper definition of requirements
 summary: Monkey don't do what monkey don't see.
 date:   2020-02-20 22:42:54 +0000
+thumbnail: proper-requirements.png
 ---
 
 User stories normally lack definition. Must include all scenarios (details can escape, of course).

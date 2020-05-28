@@ -1,11 +1,8 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 username: Anibal
 layout: home
 title: Welcome to the Product Ownership Central!
-quote: There is no difference between a garbage solution, which nobody wants and a sophisticated one, which nobody understands.
+quote: There is no difference between a solution nobody wants, and one nobody understands.
 ---
 
 # I am a title

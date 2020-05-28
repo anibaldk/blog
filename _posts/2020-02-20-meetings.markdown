@@ -1,10 +1,9 @@
 ---
 layout: post
 title:  Choosing the right tools
-summary: Hard to drive a nail with a screwdriver.
+summary: When to plan meetings, what for, stay on topic, inform beforehand 
 date:   2020-02-19 22:42:54 +0000
 author: Anibal Kolker
-thumbnail: right-tools.png
 ---
 
 Start with the story: Much like in development itself, P.Os sometimes find themselves in the pickle of which tools to chose.

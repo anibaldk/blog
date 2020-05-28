@@ -3,6 +3,7 @@ layout: post
 title:  Stiring the ship
 summary: Setting a functional North for the team.
 date:   2020-02-20 22:42:54 +0000
+thumbnail: steering-the-ship.png
 ---
 
 Besides the execution plan, have a functional plan throughout the duration of the project (year/quarters).

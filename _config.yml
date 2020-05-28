@@ -25,16 +25,24 @@ port: 4000
 
 
 
-title: Your awesome title
-email: your-email@example.com
+title: Anibal Kolker
+email: anibaldk@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Product ownershipt is a key role and, therefore, a massive responsibility
+  which gets usually overlooked by many companies.
+  More posts coming up. Stay tuned.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
+
+
+# My configs for layout (anything after the : makes the variable true)
+#show_social: on
+show_social:
+show_footer: false
+
+
 
 # Build settings
 theme: minima
@@ -49,13 +57,13 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
 #   - Gemfile
 #   - Gemfile.lock
-#   - node_modules/
+    - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/

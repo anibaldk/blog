@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  Who is right and who is wrong
-summary: Single source of truth can help you avoid this.
+title: Documentation is not an option
+summary: Key pointers into proper documenting your product.
 date:   2020-02-20 22:42:54 +0000
+thumbnail: single-source-of-truth.png
 ---
 
 Single source of truth for documentation
