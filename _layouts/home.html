@@ -17,7 +17,7 @@ layout: default
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
           {%- assign date_format = "%b %-d, %Y" -%}
           <div class="date">{{ post.date | date: date_format }}</div>
-          <div class="excerpt">{{ post.excerpt }}</div> 
+          <div class="summary">{{ post.summary }}</div> 
         </div>
       {%- endif -%}
     {%- endfor -%}

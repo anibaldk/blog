@@ -346,19 +346,31 @@ header .right a:not(:last-child) { margin-right: 20px; }
 
 
 
-.home { margin-left: auto; margin-right: auto; width: 100%; margin-top: 90px; z-index: 1; }
+.home { margin-left: auto; margin-right: auto; width: 100%; margin-top: 120px; z-index: 1; }
 .home img { display: block; position: relative; width: 70%; margin-left: auto; margin-right: auto; margin-top: 0px; }
 .home cite { text-align: center; display: block; color: #424242; margin-left: inherit; margin-right: inherit; margin-top: 15px; }
 
 .home .posts { width: 100%; display: flex; justify-content: space-between; flex-wrap: wrap; }
-.home .post { width: 30%; color: #222222; }
+.home .post { width: 30%; color: #222222; margin-bottom: 30px; }
 .home .post img {display: block; height: 50%; margin-bottom: 20px; }
 .home .post a {display: block; margin-bottom: 5px; font-family: proxima-nova,sans-serif; font-size: 20px; font-weight: bold; color: inherit; }
 .home .post a:visited {color: inherit; }
 .home .post .date {display: block; width: 100%; font-size: 14px; color: #828282; margin-bottom: 0px; }
-.home .post .excerpt { width: 100%; display: flex; justify-content: space-between; }
+.home .post .summary { width: 100%; display: flex; justify-content: space-between; }
 
 
+.post-wrapper { margin-left: auto; margin-right: auto; width: 70%; margin-top: 120px; z-index: 1; }
+.post-wrapper .post { font-family: proxima-nova,sans-serif; color: #222222; }
+.post-wrapper .post .title {font-weight: bold; font-size: 50px; margin-bottom: 0px; }
+.post-wrapper .post .date {display: block; width: 100%; font-size: 15px; font-weight: bold; color: #828282; margin-bottom: 30px; }
+.post-wrapper .post img { width: 100%; margin-bottom: 30px; }
+/* These are specially here because that's what the markdown is translated to */
+.post-wrapper .post h1 { font-size: 28px; margin: 50px 0px 30px; font-weight: bold; }
+
+
+
+
+/*
 .post-list li { margin-top: auto; margin-bottom: 30px; padding-top: 21px; padding-bottom: 21px; border: 1px solid #FF0000;}
 .post-list li:not(:last-child) { border-bottom: 1px solid #e8e8e8; }
 .post { max-width: 80%; margin-top: 20px; margin-right: auto; margin-left: auto; }
@@ -371,6 +383,6 @@ header .right a:not(:last-child) { margin-right: 20px; }
 .date-cell {width: 15%; font-size: 14px; color: #828282; background-color: #FFFFFF; vertical-align: middle; border: none; } 
 .title-cell {width: 55%; background-color: #FFFFFF; vertical-align: middle; border: none; }
 .thumbnail-cell {width: 30%; background-color: #FFFFFF; vertical-align: middle; border: none; padding-top: 2%; padding-bottom: 2%; }
-
+*/
 
 /*# sourceMappingURL=main.css.map */

@@ -6,11 +6,7 @@ date:   2020-02-20 22:42:54 +0000
 thumbnail: single-source-of-truth.png
 ---
 
-This is an excerpt which is displayed on the homepage as a summary of the post.
-It should not exceed this length of text.
-
-
-
+# Introduction
 Single source of truth for documentation
 
 
@@ -24,7 +20,7 @@ Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit number
 
 Jekyll also offers powerful support for code snippets:
 
-{% highlight ruby %}
+{% highlight python %}
 def print_hi(name)
   puts "Hi, #{name}"
 end
