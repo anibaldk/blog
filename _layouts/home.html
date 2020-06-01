@@ -2,10 +2,36 @@
 layout: default
 ---
 <div class="home">
+  <!--
   <div>
-    <img src="{{site.baseurl}}/assets/images/home.png" style="width: 50%;" alt="solutions banner"/>
-    <cite>"{{page.quote}}"</cite>  <!-- TODO: change the color of the quote -->
+     <img src="{{site.baseurl}}/assets/images/home.png" style="width: 50%;" alt="solutions banner"/> 
+    <cite>"{{page.quote}}"</cite>
   </div>
+  -->
+
+  <div class="posts">
+    {%- for post in site.posts -%}
+      {%- if post.thumbnail -%}
+        <div class="post">
+          <img src="{{site.baseurl}}/assets/images/{{post.thumbnail}}" alt="post thumbnail"/>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          {%- assign date_format = "%b %-d, %Y" -%}
+          <div class="date">{{ post.date | date: date_format }}</div>
+          <div class="excerpt">{{ post.excerpt }}</div> 
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+    <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
+    <div class="post"><!--fake post to make the table complete --></div>
+  </div>
+
+
+
+
+
+
+
+
   <br/>
   <div>
     {%- if site.posts.size > 0 -%}

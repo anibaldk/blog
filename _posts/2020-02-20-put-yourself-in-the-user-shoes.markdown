@@ -1,12 +1,16 @@
 ---
 layout: post
-title: Documentation is not an option
-summary: Key pointers into proper documenting your product.
+title: Put yourself in the user's shoes 
+summary: Getting inside the user's mind. 
 date:   2020-02-20 22:42:54 +0000
-thumbnail: single-source-of-truth.png
+thumbnail: user-mind.png
 ---
 
-Single source of truth for documentation
+This is an excerpt which is displayed on the homepage as a summary of the post.
+It should not exceed this length of text.
+
+
+Understand the user's mind 
 
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

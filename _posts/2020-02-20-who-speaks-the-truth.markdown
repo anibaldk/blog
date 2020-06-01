@@ -1,12 +1,17 @@
 ---
 layout: post
-title:  Dealing with uncertainty
-summary: Minimise the effects of the unexpected.
+title: Who speaks the truth? 
+summary: Key pointers into proper documenting your product.
 date:   2020-02-20 22:42:54 +0000
+thumbnail: single-source-of-truth.png
 ---
 
 This is an excerpt which is displayed on the homepage as a summary of the post.
 It should not exceed this length of text.
+
+
+
+Single source of truth for documentation
 
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

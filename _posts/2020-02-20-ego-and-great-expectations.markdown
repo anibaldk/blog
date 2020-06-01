@@ -4,6 +4,11 @@ title:  Ego and great expectations
 summary: Two of the greatest enemies of mutual understanding.
 date:   2020-02-20 22:42:54 +0000
 ---
+
+This is an excerpt which is displayed on the homepage as a summary of the post.
+It should not exceed this length of text.
+
+
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 Jekyll requires blog post files to be named according to the following format:

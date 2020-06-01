@@ -6,6 +6,11 @@ date:   2020-02-20 22:42:54 +0000
 thumbnail: proper-requirements.png
 ---
 
+This is an excerpt which is displayed on the homepage as a summary of the post.
+It should not exceed this length of text.
+
+
+
 User stories normally lack definition. Must include all scenarios (details can escape, of course).
 Have a clearly defined acceptance criteria which leaves no doubt. A series of testing steps.
 Reference documentation and all issues/questions must be registered in the comments section

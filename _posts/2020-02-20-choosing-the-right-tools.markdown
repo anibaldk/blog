@@ -7,6 +7,11 @@ author: Anibal Kolker
 thumbnail: right-tools.png
 ---
 
+This is an excerpt which is displayed on the homepage as a summary of the post.
+It should not exceed this length of text.
+
+
+
 Start with the story: Much like in development itself, P.Os sometimes find themselves in the pickle of which tools to chose.
 
 (mention, maybe, pricing/corporate decisions)

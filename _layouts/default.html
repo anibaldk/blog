@@ -13,26 +13,31 @@
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lacquer|Shadows+Into+Light&display=swap" rel="stylesheet">
   </head>
   <body>
+
     <!-- =================================================== HEADER =================================================== -->
-    <header class="main-header" role="banner">
-      <nav class="site-nav">
-        <div class="nav-left">
+    <header>
+        <div class="left">
+          <img src="{{site.baseurl}}/assets/images/board.png" />
           <a href="{{ "/" | relative_url }}">
-            <!-- <img src="{{site.baseurl}}/assets/images/logo.png"> -->P.O. Central
+           <span>Product<br/>Ownership<br/>Central</span>
           </a>
         </div>
-        <div class="nav-right">
+        <div class="right">
           <a href="/">Home</a>
-          <a href="{{ "about" | relative_url }}">Author</a>
+          <a href="{{ "about" | relative_url }}">About</a>
+          <!--
           <a href="{{ "feed.xml" | relative_url }}"><img src="{{site.baseurl}}/assets/images/rss.png" /></a>
+          -->
         </div>
-      </nav>
     </header>
+
+    <!-- =================================================== MAIN =================================================== -->
     <main class="page-content" aria-label="Content">
       <div class="main-content">
         {{ content }}
       </div>
     </main>
+
     <!-- =================================================== FOOTER =================================================== -->
     {%- if site.show_footer == true -%}
       <footer class="site-footer h-card">
@@ -64,5 +69,6 @@
         </div>
       </footer>
     {%- endif -%}
+    <div class="graybar"></div>
   </body>
 </html>

@@ -5,6 +5,11 @@ summary: Are you sure you included everybody?.
 date:   2020-02-20 22:42:54 +0000
 ---
 
+This is an excerpt which is displayed on the homepage as a summary of the post.
+It should not exceed this length of text.
+
+
+
 Talk about user matrix (roles), involve decision makers in the process, involve customers in the process as well.
 
 

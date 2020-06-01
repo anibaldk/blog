@@ -6,6 +6,10 @@ date:   2020-02-20 22:42:54 +0000
 thumbnail: steering-the-ship.png
 ---
 
+This is an excerpt which is displayed on the homepage as a summary of the post.
+It should not exceed this length of text.
+
+
 Besides the execution plan, have a functional plan throughout the duration of the project (year/quarters).
 Make sure people know how the functional pieces will fit together and what should be expected after each milestone.
 
