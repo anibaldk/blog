@@ -13,8 +13,10 @@ layout: default
     {%- for post in site.posts -%}
       {%- if post.thumbnail -%}
         <div class="post">
-          <img src="{{site.baseurl}}/assets/images/{{post.thumbnail}}" alt="post thumbnail"/>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          <a href="{{ post.url | relative_url }}">
+            <img src="{{site.baseurl}}/assets/images/{{post.thumbnail}}" alt="post thumbnail"/>
+            {{ post.title | escape }}
+          </a>
           {%- assign date_format = "%b %-d, %Y" -%}
           <div class="date">{{ post.date | date: date_format }}</div>
           <div class="summary">{{ post.summary }}</div> 
