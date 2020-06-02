@@ -3,6 +3,7 @@ layout: post
 title:  Prioritising the work
 summary: Some things are important but others are simply essential.
 date:   2020-02-20 22:42:54 +0000
+thumbnail: prioritise-the-work.png
 ---
 
 This is an excerpt which is displayed on the homepage as a summary of the post.

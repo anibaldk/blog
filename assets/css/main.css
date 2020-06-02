@@ -352,7 +352,8 @@ header .right a:not(:last-child) { margin-right: 20px; }
 
 .home .posts { width: 100%; display: flex; justify-content: space-between; flex-wrap: wrap; }
 .home .post { width: 30%; color: #222222; margin-bottom: 30px; }
-.home .post img {display: block; height: 50%; margin-bottom: 20px; }
+.home .post .thumbnail { width: 100%; height: 140px; }
+.home .post .thumbnail img {display: block; max-height: 100%; max-width: 100%; margin-bottom: 20px; }
 .home .post a {display: block; margin-bottom: 5px; font-family: proxima-nova,sans-serif; font-size: 20px; font-weight: bold; color: inherit; }
 .home .post a:visited {color: inherit; }
 .home .post .date {display: block; width: 100%; font-size: 14px; color: #828282; margin-bottom: 0px; }

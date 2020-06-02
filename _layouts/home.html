@@ -14,7 +14,7 @@ layout: default
       {%- if post.thumbnail -%}
         <div class="post">
           <a href="{{ post.url | relative_url }}">
-            <img src="{{site.baseurl}}/assets/images/{{post.thumbnail}}" alt="post thumbnail"/>
+            <div class="thumbnail"> <img src="{{site.baseurl}}/assets/images/{{post.thumbnail}}" alt="post thumbnail"/></div>
             {{ post.title | escape }}
           </a>
           {%- assign date_format = "%b %-d, %Y" -%}
